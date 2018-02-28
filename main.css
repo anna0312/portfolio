@@ -1,7 +1,14 @@
 body {
-  background: #000;
+  background: #fff;
 }
 
 h1 {
   color: #FF2734;
+}
+
+.profile-img {
+
+  border-radius: 50%;
+  width: 100%;
+  right: -200px;
 }
