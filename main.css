@@ -7,8 +7,6 @@ h1 {
 }
 
 .profile-img {
-
   border-radius: 50%;
-  width: 100%;
-  right: -200px;
+  max-width: 200px;
 }
