@@ -1,47 +1,671 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <title>Anna--in progres</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="main.css">
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="index.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
-    <body class="container-fluid">
+<html lang="en" class="no-js">
 
-      <div class="row">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come after these tags -->
 
-        <div class="col-sm-5">
-          <h1> Design is still in progress... Apologies for the temporary
-          hideousness of this page! </h1>
+  <!-- Fill in the following meta tags -->
+  <meta name="keywords" content="keyword1, keyword2, keyword3" />
+  <meta name="description" content="Description">
+  <meta name="author" content="Author">
 
-          <h2>About</h2>
+  <!-- Change the site title -->
+  <title>Anna Bremner</title>
 
-          <img src="assets/images/anna.jpg" class="profile-img" align="right">
-<b>I need a more appropriate picture. Coming soon</b>
-<p>
-More than a decade ago, Anna co-founded Blue Sky Collaborative and lead the technology and product efforts. The platform she built helped raise hundreds of millions of dollars and grew Blue Sky into an industry leader in grass roots fundraising. Her work in online fundraising and awareness building has been featured on Nightline, ESPN, NBCs Today Show and in the New York Times. She has lead projects as an outside consultant at prominent Boston area clients like Biogen, Millenium Pharmaceuticals, State Street Bank, and Partners Healthcare. Ms. Bremner is also a classically trained musician who has performed at Carnegie Hall and before Margaret Thatcher, Francois Mitterrand, former President George Bush, and Mikail Gorbachev at the United Nations. Ms. Bremner graduated in 1998 from New York University with a BA in Politics and a minor in Journalism. She is also fluent in French and English.
-</p>
-          <h2>Skills</h2>
-          <h2>Contact</h2>
-          <h2>Resume</h2>
-          <h2>Showcase</h2>
-          <h4>Tic Tac Toe</h4>
-          <a href="https://anna0312.github.io/tttgame">Play the game</a>
-           |
-          <a href="https://github.com/anna0312/tttgame">Check out the repo</a>
+  <!-- You can regenerate the favicons as you wish using http://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:200,300,300i,400,700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <!-- Pretty Photo -->
+  <link rel="stylesheet" href="css/prettyPhoto.css" />
+
+  <!-- Flickity -->
+  <link rel="stylesheet" href="css/flickity.css" />
+
+  <!-- animate.css -->
+  <link rel="stylesheet" href="css/animate.css" />
+
+  <!-- custom.css - the styling for this template -->
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Modernizr -->
+  <script src="js/modernizr-custom.js"></script>
+
+</head>
+
+<body>
+
+  <!-- status spinner showing while loading the page -->
+  <div id="preloader"></div>
+
+  <!-- HEADER -->
+  <header>
+    <nav id="mySidenav" class="sidenav navbar-nav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a class="nav-link" href="#hero">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#portfolio">Portfolio</a>
+
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+    <span id="openNav" onclick="openNav()">&#9776;</span>
+  </header>
+
+  <!-- HEADER END -->
+
+  <div id="content-wrap">
+
+    <!-- HERO AREA -->
+    <div class="jumbotron" id="hero" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+      <div class="container">
+        <h1>Anna Bremner</h1>
+        <!--
+            <span class="typed" style="text-align: left;">I am web developer</span>
+-->
+        <span>Full stack developer and front end designer <br />Builder of cool things <br />Junior frommagier
+  </span>
+        <div class="typed-wrap"></div>
+        <a href="#portfolio" class="btn btn-primary portfolio-link scroll-link">See my portfolio</a>
+      </div>
+    </div>
+    <!-- HERO AREA END -->
+
+    <!-- bouncing arrow -->
+    <div class="arrow-wrap">
+      <a href="#about" class="arrow down-bounce scroll-link fa fa-angle-double-down"></a>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-12">
+            <div class="photo-wrap">
+              <img src="img/profilepic.jpg" class="photo" alt="" />
+
+              <div class="photo-overlay">
+                <div class="photo-text social">
+                  <a href="https://www.linkedin.com/in/annalucybremner/"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://github.com/anna0312/"><i class="fa fa-github"></i></a>
+                  <a href="https://www.instagram.com/annabrem/"><i class="fa fa-instagram"></i></a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="aboutRight" class="col-lg-6 col-12">
+            <div>
+              <h4>Talking about yourself is awkward but...</h4>
+
+              <h2>A LITTLE ABOUT ME</h2>
+            </div>
+            <div>
+              <p>
+                In my time as a full stack developer and entrepreneur I have worn many hats, from server side application programmer and database architect to product manager and working in partnership with clients to solve business problems. 15 years ago I co-founded
+                a company that creates grassroots fundraising solutions for nonprofits. At the time grassroots fundraising was new to the technology and nonprofit world, and I’m proud to say our innovative product helped organizations raise over $200
+                million. I love the puzzle-like aspect of programming and pride myself on my track record for hard work and being able to take an idea, run with it, and deliver a product that has consistently delighted my clients.
+              </p>
+
+            </div>
+          </div>
         </div>
-        <div class="col-sm-7">
+      </div>
+    </section>
+    <!-- ABOUT END -->
 
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="section-header">
+        <div>
+          <h2>Recent Work</h2>
         </div>
       </div>
 
+      <div class="container">
+        <!--
+                <div id="filters-group">
+                    <a class="filter" data-filter="*">show all</a>
+                    <a class="filter" data-filter=".plugins">plugins</a>
+                    <a class="filter" data-filter=".design">design</a>
+                    <a class="filter" data-filter=".photography">photography</a>
+                </div>
+              -->
+        <div id="portfolio-items" class="row">
+          <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
+            <a title="
+                            <b>Go There</b> is a round-the-world travel planning site built as a final project for my WDI course at General Assembly.
+                            <br /><a href='https://anna0312.github.io/capstone/' target='_blank'>Visit the site</a>
+                            <br /><a href='https://github.com/anna0312/capstone/' target='_blank'>View the repo</a>
+                          " data-rel="prettyPhoto" href="img/portfolio/gothere.jpg">
+              <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/gothere.jpg" alt="Go There">
+              </div>
+              <span class="magnifier"></span>
+            </a>
+          </div>
+
+          <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
+            <a title="
+                            <b>SCUBER</b> is a dive tracker application I built for my WDI course at General Assembly.
+                            <br /><a href='https://anna0312.github.io/scuber/' target='_blank'>Visit the site</a>
+                            <br /><a href='https://github.com/anna0312/scuber/' target='_blank'>View the repo</a>
+                          " data-rel="prettyPhoto" href="img/portfolio/scuber.jpg">
+              <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/scuber.jpg" alt="SCUBER">
+              </div>
+              <span class="magnifier"></span>
+            </a>
+          </div>
+
+          <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
+            <a title="
+                            <b>AIDs Walk Portland</b> has been a client for many years. Their event site includes the usual peer-to-peer fundraising, plus a few bells and whistles, including volunteer management, photo sign-up, and micro-fundraising events.
+                            <br /><a href='http://aidswalkportland.org/' target='_blank'>Visit the site</a>
+                              " data-rel="prettyPhoto" href="img/portfolio/awpdx.jpg">
+              <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/awpdx.jpg" alt="AIDs Walk Portland">
+              </div>
+              <span class="magnifier"></span>
+            </a>
+          </div>
+
+          <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
+            <a title="
+                            <b>Cupid's Undie Run, dashboard</b> is part of the administrative back end built for Cupid's Undie Run. Features Incude:
+                            <ul>
+                              <li>Registration and Donation reporting</li>
+                              <li>Email marketing</li>
+                              <li>Matching gift management</li>
+                              <li>Data analytics tools</li>
+                            </ul>
+                            <br /><a href='https://my.cupids.org' target='_blank'>Visit the site</a> (administrative back end is is restricted to staff)
+                          " data-rel="prettyPhoto" href="img/portfolio/cur_dash.png">
+              <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/cur_dash.png" alt="Cupid's Undie Run">
+              </div>
+              <span class="magnifier"></span>
+            </a>
+          </div>
+
+          <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
+            <a title="
+                            <b>Cupid's Undie Run</b> raised over $3 million last year. The fundraising tools we built include:
+                            <ul>
+                              <li>Online donations</li>
+                              <li>Event registration</li>
+                              <li>Photo uploads</li>
+                              <li>Content management</li>
+                            </ul>
+                            <br /><a href='https://my.cupids.org' target='_blank'>htts://my.cupids.org</a>
+                          " data-rel="prettyPhoto" href="img/portfolio/curfundraising.jpg">
+              <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/curfundraising.jpg" alt="Cupid's Undie Run">
+              </div>
+              <span class="magnifier"></span>
+            </a>
+          </div>
+
+          <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
+            <a title="
+                            <b>Hamptons Paddle for Pink</b> is a star-studded fundraising event for the
+                            Breast Cancer Research Foundation. The website includes event registration, participant fundraising,
+                            sponsorhip package and party ticket purchases.
+
+                            <br /><a href='http://hamptonspaddleforpink.org/' target='_blank'>Go to the site</a>
+                          " data-rel="prettyPhoto" href="img/portfolio/bcrf.jpg">
+              <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/bcrf.jpg" alt="Breast Cancer Research Foundation's Hampton's Paddle for Pink">
+              </div>
+              <span class="magnifier"></span>
+            </a>
+          </div>
+
+          <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
+            <a title="
+                            <b>Anna Bremner Jewelry Designs.</b> Back when I was also a jewelry designer, I built my e-commerce site from scratch. The company is no longer in operation and the site does not exist anymore.
+                          " data-rel="prettyPhoto" href="img/portfolio/jewelry.jpg">
+              <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/jewelry.jpg" alt="Cupid's Undie Run">
+              </div>
+              <span class="magnifier"></span>
+            </a>
+          </div>
+          <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
+            <a title="
+                            <b>Nozama</b> was built as a team project for my course at General Assembly.
+                            <br /><a href='https://threebirdsandabill.github.io/nozama/' target='_blank'>Visit the site</a>
+                            <br /><a href='https://github.com/threebirdsandabill/nozama' target='_blank'>View the repo</a>
+
+                          " data-rel="prettyPhoto" href="img/portfolio/jewelry.jpg">
+              <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/nozama.jpg" alt="Nozama">
+              </div>
+              <span class="magnifier"></span>
+            </a>
+          </div>
 
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
+          <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
+            <a title="
+                            <b>Tic Tac Toe</b> was built as the first for my course at General Assembly.
+                            <br /><a href='https://anna0312.github.io/tttgame/' target='_blank'>Visit the site</a>
+                            <br /><a href='https://github.com/anna0312/tttgame' target='_blank'>View the repo</a>
+
+                          " data-rel="prettyPhoto" href="img/portfolio/tictactoe.jpg">
+              <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/tictactoe.jpg" alt="Tic Tac Toe">
+              </div>
+              <span class="magnifier"></span>
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO END -->
+
+    <!-- skills -->
+    <div class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Technical Skills</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-xs-2">
+            JavaScript<br /> Node.js
+            <br /> Mongoose
+            <br /> Express
+            <br />
+          </div>
+          <div class="col-md-3 col-xs-2">
+            HTML/CSS<br /> MS SQL Server<br /> PostgreSQL
+            <br /> MongoDB
+            <br />
+          </div>
+          <div class="col-md-3 col-xs-2">
+            Ruby<br /> Rails
+            <br /> ASP
+            <br /> Bootstrap
+            <br />
+          </div>
+          <div class="col-md-3 col-xs-2">
+            JQuery<br /> Photoshop
+            <br /> GIT
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- skills end -->
+    <!-- SERVICES -->
+    <!--
+    <section id="services">
+        <div class="section-header">
+            <div>
+                <h2>Services I offer</h2>
+            </div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="circle"><i class="fa fa-desktop"></i></div>
+                            <h3>Web Design</h3>
+
+                            <p>Praesent magna neque, dapibus sit amet eros sed, aliquam interdum felis. Nulla rhoncus
+                                ipsum dui.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="circle"><i class="fa fa-cogs"></i></div>
+                            <h3>Coding</h3>
+
+                            <p>Praesent magna neque, dapibus sit amet eros sed, aliquam interdum felis. Nulla rhoncus
+                                ipsum dui.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="circle"><i class="fa fa-code"></i></div>
+                            <h3>Clean Code</h3>
+
+                            <p>Praesent magna neque, dapibus sit amet eros sed, aliquam interdum felis. Nulla rhoncus
+                                ipsum dui.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="box">
+                            <div class="circle"><i class="fa fa-camera"></i></div>
+                            <h3>Photography</h3>
+
+                            <p>Praesent magna neque, dapibus sit amet eros sed, aliquam interdum felis. Nulla rhoncus
+                                ipsum dui.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  -->
+    <!-- SERVICES END -->
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-header">
+        <div>
+          <h2>My Experience</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Blue Sky Collaborative <br /><b>Cofounder and Technology Director</b></h3>
+            <span>2003 - 2018</span>
+
+            <p>
+
+              Architect and lead developer of our flagship platform, SWEET, which has been used by hundreds of nonprofit organizations to raise over $200,000,000.
+            </p>
+            <p>
+              Executed a variety of roles and functions to help grow the business, including brand design, product management, business development, and strategic planning
+            </p>
+            <p>
+              Collaborated with clients to develop their online fundraising strategy and KPIs
+            </p>
+            <p>
+              Managed, mentored, and trained junior developers and contractors
+            </p>
+            <p>
+              Built enterprise level applications for fundraising, social networking, and charity event management that include:
+            </p>
+            <ul>
+              <li>Reporting and data analysis tools</li>
+              <li>Integration with payment gateways, CRMs, e-marketing systems and donor management systems</li>
+              <li>Back end APIs for use by external developers and mobile platforms</li>
+              <li>Cutting edge design</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="timeline-block timeline-block-left">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>ALS Therapy Development Institute <br /><b>Informatics Developer</b></h3>
+            <span>2002 - 2003</span>
+
+            <p>
+              Partnered with fundraising and marketing departments to create a multi-tiered online presence
+            </p>
+            <p>
+              Led the development of the organization's ground breaking online grassroots fundraising platform, adding vital revenue stream and constituent engagement resources for the company.
+            </p>
+            <p>
+              Helped build and maintain a proprietary Laboratory Information Management System for use by scientists
+            </p>
+          </div>
+        </div>
+        <div class="timeline-block timeline-block-right">
+          <div class="marker"></div>
+          <div class="timeline-content">
+            <h3>Creative Allies/Gentlepeople <br /><b>Webmaster</b></h3>
+            <span>2002 - 2010</span>
+
+            <p>Led the development of a fully-featured online-dating application
+            </p>
+            <p>
+              Built and maintained the company's two marketing websites and partnered with the event management and match-making teams to provide them with key technology resources
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- EXPERIENCE END -->
+
+
+    <!-- HIRE ME -->
+    <!--
+    <section id="hireme" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+        <div class="section-header container">
+            <div class="col-12">
+                <h2 class="animation" data-animation="fadeInLeft">Do you have an interesting project?</h2>
+                <h4 class="animation" data-animation="fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Proin suscipit lorem in ipsum efficitur laoreet. Suspendisse malesuada mi ligula, sit amet
+                    tristique ex lacinia vel.</h4>
+                <a data-animation="fadeInRight" class="btn btn-primary scroll-link animation" href="#contact">Hire
+                    me!</a>
+            </div>
+        </div>
+    </section>
+  -->
+    <!-- HIRE ME END -->
+
+
+    <!-- TESTIMONIALS -->
+    <!--
+    <section id="testimonials" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="100">
+        <div class="section-header">
+            <div>
+                <h2>What my clients say</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="testimonials-content" class="col-12">
+                    <div class="gallery-cell">
+                        <div class="testimonial">
+                            <img class="testimonial-avatar"
+                                 src="img/client1.jpg" alt="">
+                            <q class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                                mauris
+                                ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</q>
+                            <span class="testimonial-author">Joe Smith, CEO</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <div class="testimonial">
+                            <img class="testimonial-avatar"
+                                 src="img/client2.jpg" alt="">
+                            <q class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                                mauris
+                                ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</q>
+                            <span class="testimonial-author">Lisa Jones, Designer</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <div class="testimonial">
+                            <img class="testimonial-avatar"
+                                 src="img/client3.jpg" alt="">
+                            <q class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                                mauris
+                                ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</q>
+                            <span class="testimonial-author">Ryan Waltz, Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  -->
+    <!-- TESTIMONIALS END -->
+
+    <!-- BLOG / NEWS -->
+    <!--
+    <section id="blog">
+        <div class="section-header">
+            <div>
+                <h2>Watch my Blog</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 item">
+                    <img src="img/blog/blog1.jpg" class="img-fluid" alt=""/>
+                    <h4>Donec hendrerit ultricies orci eget pretium</h4>
+
+                    <p>
+                        Vivamus a mattis augue. Suspendisse aliquam justo in nibh hendrerit lobortis. Proin euismod nisl
+                        sem, ac rhoncus ex lacinia nec.
+                        Aliquam bibendum vel dui eu tincidunt...
+                    </p>
+                    <a href="#" class="btn btn-secondary">Read more...</a>
+                </div>
+                <div class="col-12 col-lg-4 item">
+                    <img src="img/blog/blog2.jpg" class="img-fluid" alt=""/>
+                    <h4>Donec hendrerit ultricies orci eget pretium</h4>
+
+                    <p>
+                        Vivamus a mattis augue. Suspendisse aliquam justo in nibh hendrerit lobortis. Proin euismod nisl
+                        sem, ac rhoncus ex lacinia nec.
+                        Aliquam bibendum vel dui eu tincidunt...
+                    </p>
+                    <a href="#" class="btn btn-secondary">Read more...</a>
+                </div>
+                <div class="col-12 col-lg-4 item">
+                    <img src="img/blog/blog3.jpg" class="img-fluid" alt=""/>
+                    <h4>Donec hendrerit ultricies orci eget pretium</h4>
+
+                    <p>
+                        Vivamus a mattis augue. Suspendisse aliquam justo in nibh hendrerit lobortis. Proin euismod nisl
+                        sem, ac rhoncus ex lacinia nec.
+                        Aliquam bibendum vel dui eu tincidunt...
+                    </p>
+                    <a href="#" class="btn btn-secondary">Read more...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+  -->
+    <!-- BLOG / NEWS END -->
+
+    <!-- CONTACT FORM  -->
+    <section id="contact">
+      <div class="section-header">
+        <div>
+          <h2>Contact Me</h2>
+
+          <p>Please fill the form below. I will contact you as soon as possible.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div id="form-messages"></div>
+        <div class="form-wrap">
+          <form id="contact-form" action="api/contact.php" method="post" autocomplete="off">
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <input class="form-control" type="text" placeholder="Your Name" name="name" id="name" required/>
+                <input class="form-control" type="text" placeholder="E-mail" name="email" id="email" required/>
+                <input class="form-control" type="text" placeholder="Subject" name="subject" id="subject" required/>
+              </div>
+              <div class="col-12 col-sm-6">
+                <textarea class="form-control" placeholder="Your Message" rows="7" name="message" id="message" required></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
+              </div>
+            </div>
+          </form>
+          <div id="ajaxLoad"></div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT FORM  END -->
+  </div>
+
+  <div id="footer-wrap">
+
+    <!-- CONTACT INFO  -->
+    <div id="contact2">
+      <div class="container">
+        <div class="row withMap">
+          <div class="col-12 col-md-8">
+            <div id="googleMap"></div>
+          </div>
+          <div class="col-12 col-md-4">
+
+            <div>
+              <i class="fa fa-phone"> </i>617 549 9504
+            </div>
+            <div>
+              <i class="fa fa-envelope"> </i>annabremner@gmail.com
+            </div>
+            <div class="mapinfo">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT INFO END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+
+          </div>
+          <div class="col-12 col-sm-6 social">
+            <p class="pull-right">
+              <a href="https://www.linkedin.com/in/annalucybremner/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/anna0312/"><i class="fa fa-github"></i></a>
+              <a href="https://www.instagram.com/annabrem/"><i class="fa fa-instagram"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+  </div>
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/flickity.pkgd.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.debouncedresize.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMYUCUdT1WkZJFkrpI4IzEObG8_YNcZPg&callback=myMap"></script>
+
+</body>
+
 </html>
