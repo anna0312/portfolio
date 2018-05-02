@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:200,300,300i,400,700" rel="stylesheet">
@@ -66,7 +66,8 @@
       <a class="nav-link" href="http://annabremner.com/AnnaBremnerResume.pdf" target="_blank">Resume <i class="fas fa-cloud-download-alt"></i></a>
       <a class="nav-link" href="#skills">Skills</a>
       <a class="nav-link" href="#experience">Experience</a>
-      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" href="#contact">Dogs</a>
+      <a class="nav-link" href="#contact2">Contact</a>
     </nav>
     <span id="openNav" onclick="openNav()">&#9776;</span>
   </header>
@@ -154,11 +155,7 @@
               -->
         <div id="portfolio-items" class="row">
           <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
-            <a title="
-                            <b>Go There</b> is a round-the-world travel planning site built as a final project for my WDI course at General Assembly.
-                            <br /><a href='https://anna0312.github.io/capstone/' target='_blank'>Visit the site</a>
-                            <br /><a href='https://github.com/anna0312/capstone/' target='_blank'>View the repo</a>
-                          " data-rel="prettyPhoto" href="img/portfolio/gothere.jpg">
+            <a title="Go There" data-toggle="modal" data-target="#modalGoThere" id="tileGothere">
               <div class="item-wrap">
                 <img class="img-fluid" src="img/portfolio/gothere.jpg" alt="Go There">
               </div>
@@ -192,36 +189,18 @@
           </div>
 
           <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
-            <a title="
-                            <b>Cupid's Undie Run, dashboard</b> is part of the administrative back end built for Cupid's Undie Run. Features Incude:
-                            <ul>
-                              <li>Registration and Donation reporting</li>
-                              <li>Email marketing</li>
-                              <li>Matching gift management</li>
-                              <li>Data analytics tools</li>
-                            </ul>
-                            <br /><a href='https://my.cupids.org' target='_blank'>Visit the site</a> (administrative back end is is restricted to staff)
-                          " data-rel="prettyPhoto" href="img/portfolio/cur_dash.png">
-              <div class="item-wrap">
-                <img class="img-fluid" src="img/portfolio/cur_dash.png" alt="Cupid's Undie Run">
+            <a title="Cupids" data-toggle="modal" data-target="#modalCupids" id="tileCupids">
+                    <div class="item-wrap">
+                <img class="img-fluid" src="img/portfolio/curfundraising.jpg" alt="Cupid's Undie Run">
               </div>
               <span class="magnifier"></span>
             </a>
           </div>
 
           <div class="item col-md-6 col-lg-4 col-12 webdev" data-category="webdev">
-            <a title="
-                            <b>Cupid's Undie Run</b> raised over $3 million last year. The fundraising tools we built include:
-                            <ul>
-                              <li>Online donations</li>
-                              <li>Event registration</li>
-                              <li>Photo uploads</li>
-                              <li>Content management</li>
-                            </ul>
-                            <br /><a href='https://my.cupids.org' target='_blank'>htts://my.cupids.org</a>
-                          " data-rel="prettyPhoto" href="img/portfolio/curfundraising.jpg">
-              <div class="item-wrap">
-                <img class="img-fluid" src="img/portfolio/curfundraising.jpg" alt="Cupid's Undie Run">
+            <a title="Bike to the Beach" data-toggle="modal" data-target="#modalBiketothebeach" id="tileBiketothebeach">
+                    <div class="item-wrap">
+                <img class="img-fluid" src="img/biketothebeach.jpg" alt="Bike to the Beach">
               </div>
               <span class="magnifier"></span>
             </a>
@@ -570,34 +549,22 @@
     <section id="contact">
       <div class="section-header">
         <div>
-          <h2>Contact Me</h2>
+          <h2>Advisory Board</h2>
 
-          <p>Please fill the form below. I will contact you as soon as possible.</p>
+          <p>My work would not be possible without the guidance and direction of my trusted advisors:</p>
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="img/bartleby_bw.jpg" class="dogPicture" alt="Bartleby">
+              <p>Bartleby</p>
+            </div>
+            <div class="col-sm-6">
+              <img src="img/millhouse_bw.jpg" class="dogPicture" alt="Bartleby">
+              <p>Millhouse</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container">
-        <div id="form-messages"></div>
-        <div class="form-wrap">
-          <form id="contact-form" action="mailto:annabremner@gmail.com" method="post" enctype="text/plain" autocomplete="off">
-            <div class="row">
-              <div class="col-12 col-sm-6">
-                <input class="form-control" type="text" placeholder="Your Name" name="name" id="name" required/>
-                <input class="form-control" type="text" placeholder="E-mail" name="email" id="email" required/>
-                <input class="form-control" type="text" placeholder="Subject" name="subject" id="subject" required/>
-              </div>
-              <div class="col-12 col-sm-6">
-                <textarea class="form-control" placeholder="Your Message" rows="7" name="message" id="message" required></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
-              </div>
-            </div>
-          </form>
-          <div id="ajaxLoad"></div>
-        </div>
-      </div>
+
     </section>
     <!-- CONTACT FORM  END -->
   </div>
@@ -649,9 +616,172 @@
 
   </div>
 
+<!-- modals -->
+
+<div class="modal fade" id="modalGothere" tabindex="-1" role="dialog" aria-labelledby="modalGothereLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalGothereLabel">Go There</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-7">
+            <p><b>Go There</b> is a round-the-world travel planning site built as a final project for my WDI course at General Assembly.</p>
+            <p>Go There was inspired by my passion for travel and a plan to  travel the circumference of the world with my husband. There are many travel sites out there, but I didn't find one that enabled you to plan a multi-legged journey and access the data to make decisions about where to go, when to go there, and what order to go there in.</p>
+            <p>The site was built in 5 days using technologies that were new to my skill stack and as a great way to put what I learned to work. This is an on-going project with features that I am continuing to flesh out. Stay tuned for updates!</p>
+            <p><b>Technologies used:</b> Node.js, Express, MongoDB, Mongoose, HTML/CSS, JavaScript</p>
+            <p><b>Integrations and plug-ins used:</b>
+              <a href="https://developers.google.com/maps/" target="_blank">Google Maps</a>,
+              <a href="https://github.com/bevacqua/dragulaDragula" target="_blank">Dragula</a>,
+              <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">Bootstrap Notify</a>,
+            </p>
+            <br /><a href='https://anna0312.github.io/capstone/' target='_blank'>Visit the site</a>
+            <br /><a href='https://github.com/anna0312/capstone/' target='_blank'>View the repo</a>
+          </div>
+          <div class="col-sm-5">
+            <img src="img/portfolio/screenshots/gotherehome.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/gotheremap.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/gotherecards.jpg" class="screenshot">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCupids" tabindex="-1" role="dialog" aria-labelledby="modalCupidsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCupidsLabel">Cupid's Undie Run</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-7">
+            <p><b>my.cupids.org</b> is the fundraising and participant portal for Cupid's Undie Run, a charity event raing money for the Children's Tumor Foundation. </p>
+            <p>While at Blue Sky Collaborative, we started working with Cupid's Charities in 2012, when the Cupid's Undie Run
+            was in its early stages and had rasied $50,000. They were looking for a firm that could provide them with
+          a customized fundraising component that would fit their unique needs and expand with them. They have since grown dramatically
+          and raise several million dollars a year and hold events accross the country with tens of thousands of participants. </p>
+
+          <p>Over the years, the my.cupids.org site has evolved to contain many cutting edge fundraising tools, including: </p>
+            <ul>
+              <li>Participant registration</li>
+              <li>Online donations with multiple payment option types</li>
+              <li>Donation matching</li>
+              <li>Participant fundraising incentive tracking</li>
+              <li>Volunteer management</li>
+              <li>Multiple levels of site administration and reporting</li>
+              <li>Customizeable content</li>
+              <li>Built-in email marketing</li>
+              <li>Referral bonus management</li>
+              <li>Photo uploaders</li>
+            </ul>
+            <p><b>Technologies used:</b>ASP, SQL Server, Javascript, HTML/CSS</p>
+            <p><b>Integrations:</b>
+            Authorize.net, PayPal, ActiveCampaign, Cloudesponge, Facebook, Tableau, MailChimp, Seko
+            </p>
+            <br /><a href='https://my.cupids.org' target='_blank'>Visit the site</a>
+          </div>
+          <div class="col-sm-5">
+            <img src="img/portfolio/screenshots/cur_fundraisingpage.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/cur_participantdash.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/cur_adminnav.jpg" class="screenshot">
+
+            <img src="img/portfolio/screenshots/cur_editdefaultcontent.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/cur_incentives.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/cur_adminnav.jpg" class="screenshot">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalScuber" tabindex="-1" role="dialog" aria-labelledby="modalScuber" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalScuberLabel">Scuber</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-7">
+            <p><b>SCUBER</b> is a simple dive-track site I built for my WDI course at General Assembly</p>
+            <p><b>Technologies used:</b> Ruby, Rails, PostgreSQL, HTML/CSS, JavaScript, Handlebars</p>
+            <br /><a href='https://anna0312.github.io/scuber/' target='_blank'>Visit the site</a>
+            <br /><a href='https://github.com/anna0312/scuber/' target='_blank'>View the front end repo</a>
+            <br /><a href='https://github.com/anna0312/diver/' target='_blank'>View the back end repo</a>
+          </div>
+          <div class="col-sm-5">
+            <img src="img/portfolio/screenshots/scuber.jpg" class="screenshot">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalBiketothebeach" tabindex="-1" role="dialog" aria-labelledby="modalBiketothebeachLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBiketothebeachLabel">Bike to the Beach</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-7">
+            <p><b>my.biketothebeach.org</b> is the fundraising portal site used by Bike to the Beach, a charity bike ride that raises money for Autism. </p>
+            <p>Bike to the Beach came to us with a request similar to what Cupid's was looking for: a fundraising and event-management
+              portal that accomodates their unique event registration logic special features they wanted to provide their riders with. </p>
+              <p>Special features include: </p>
+              <ul>
+                <li>Registration with referal and promo codes</li>
+                <li>Badges earned by participants through various acheivements</li>
+                <li>Incentive points earned by participants that can be cashed in for registration payment discounts and to use at their shopify store.</li>
+                <li>Multi-legged ride-long volunteer sign up and management</li>
+                <li>Fully integrated email system</li>
+                <li>A complex integration with Salesforce that breaks data down into several tiers including donors, teams, participants, and rides.
+              </ul>
+              <p><b>Technologies used:</b>ASP, SQL Server, Javascript, HTML/CSS</p>
+              <p><b>Integrations:</b>
+              Salesforce, FirstData, PayEezy, Strava, Mailchimp, Cloudesponge
+              </p>
+
+            <br /><a href='https://my.biketothebeach.org' target='_blank'>Visit the site</a>
+          </div>
+          <div class="col-sm-5">
+            <img src="img/portfolio/screenshots/biketothebeach.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/emailstatstemplate.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/b2bDonation.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/b2breg2.jpg" class="screenshot">
+            <img src="img/portfolio/screenshots/b2bStrava.jpg" class="screenshot">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="js/tether.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
@@ -666,6 +796,21 @@
   <script src="js/custom.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMYUCUdT1WkZJFkrpI4IzEObG8_YNcZPg&callback=myMap"></script>
 
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $('#tileGothere').click(function () {
+      $('#modalGothere').modal('show');
+    });
+
+    $('#tileCupids').click(function () {
+      $('#modalCupids').modal('show');
+    });
+
+    $('#tileBiketothebeach').click(function () {
+      $('#modalBiketothebeach').modal('show');
+    });
+  });
+  </script>
 </body>
 
 </html>

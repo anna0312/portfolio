@@ -693,6 +693,17 @@ font-size: 1.1rem
 /** PORTFOLIO SECTION                                                                                             */
 /******************************************************************************************************************/
 
+.modal-content {
+  border-radius: 0px;
+  padding: 20px;
+}
+
+.modal-header {
+}
+
+.screenshot {
+  width: 100%;
+}
 #portfolio {
     padding-bottom: 4rem;
     border-radius: 0;
@@ -984,6 +995,12 @@ font-size: 1.1rem
 /******************************************************************************************************************/
 /** CONTACT FORM                                                                                                  */
 /******************************************************************************************************************/
+
+.dogPicture {
+  padding: 15px;
+  background-color: #fff;
+  max-width: 300px;
+}
 
 #contact {
     background: #333;
