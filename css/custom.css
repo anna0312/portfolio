@@ -532,6 +532,7 @@ nav a.nav-link:active, nav a.nav-link:focus {
 .photo-wrap {
     position: relative;
     width: 100%;
+    padding: 20px;
 }
 
 .photo-text .fa, .photo-text .fa:visited, .photo-text .fa:active, .photo-text .fa:focus {
